@@ -6,14 +6,28 @@
 
 <style>
 body {
-    background-image: url('img/bg.svg'); /* For the entire page */
-  background-repeat: no-repeat; /* Optional: Prevent image repetition */
-  background-size: 100%; /* Optional: Scale image to cover the entire element */
-  background-position: 0% 0%;
+    background-image: url('img/top_right.svg'),
+		      url('img/bottom_left_500.svg');
+    background-repeat: no-repeat,
+		       no-repeat;
+    background-size: 25%,
+		     25%;
+    background-attachment: fixed,
+			   fixed;
+    background-position: top right,
+			 bottom left;
 }
-</style>
 
-<style>
+  .background-iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove default iframe border */
+    z-index: -1; /* Place behind other content */
+  }
+
 .content {
   max-width: 600px;
   margin: auto;
@@ -70,7 +84,8 @@ body {
   height="600"/>
 
 <br>
-<iframe src="https://free.timeanddate.com/countdown/ia6j952p/n212/cf110/cm0/cu3/ct5/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pcbbb/tcf1d8e7/fn3/fs130/szw448/szh189/tatWedding%20in.../tac000/tptJust%20Married%20for.../tpc000/iso2026-08-08T17:00:00" allowtransparency="true" frameborder="0" width="448" height="189"></iframe>
+<iframe class= "background-iframe" src="https://free.timeanddate.com/countdown/ia6j952p/n212/cf12/cm0/cu3/ct5/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pct/tcf1d8e7/fn3/fs130/tatWedding%20in.../tac000/tptJust%20Married%20for.../tpc000/iso2026-08-08T17:00:00/bas4/bat0/pa4" allowtransparency="true" frameborder="0" width="157" height="66"></iframe>
+
 
 
 

@@ -18,6 +18,7 @@ body {
     background-position: top right,
 			 bottom left;
     cursor: url('img/wedding_ring_cursor.png'), auto;
+    
 }
 
   .background-iframe {
@@ -30,9 +31,10 @@ body {
   }
 
 .content {
-
-  height: 90vh;
-  width: 90vw;
+    position: fixed;
+    flex: auto;
+    height: 100vh;
+   padding: 20px;
   margin: auto;
   text-align: center;
   justify-content: center; 
@@ -47,15 +49,14 @@ display:none;
 
 
 
-
 * {
   box-sizing: border-box;
 }
 
 
 ul {
-  width: 100%;
-  height: 100%;
+    flex: auto;
+    height: 100%;
   padding: 20px;
   display: flex;
   gap: 4vw;
@@ -63,8 +64,7 @@ ul {
 li {
     list-style-type: none;
 
-  padding: 20px;
-
+    padding: 20px;
   flex: 0 0 100%;
 }
 ul {
@@ -74,7 +74,8 @@ ul {
   scrollbar-width: auto;
 }
 li {
-  scroll-snap-align: center;
+    scroll-snap-align: center;
+    
 }
 ul::scroll-button(*) {
   border: 0;
@@ -146,8 +147,11 @@ li::scroll-marker {
 li::scroll-marker:target-current {
   background-color: black;
 }
-
-
+.largepic {
+    object-fit: scale-down;
+    width: 100%;
+    max-height: 100%;
+}
 
 
 </style>
@@ -156,10 +160,10 @@ li::scroll-marker:target-current {
 <body>
 
 <div class="content">
-<h3>We invite you to celebrate David Harris and Alexandra Lorentz's engagment and upcoming marriage.</h3>
+<h1>We invite you to celebrate David Harris and Alexandra Lorentz's wedding</h1>
 <ul>
   <li>
-<img src="img/photo-1.png" style="height:100%">
+<img src="img/photo-1.png" class="largepic">
   </li>
   <li>
     <h2>
@@ -206,8 +210,11 @@ li::scroll-marker:target-current {
 </html>
 
 
+
+
+
+  
 <!-- Local Variables: -->
 <!-- compile-command: "python3 -m http.server 8000" -->
 <!-- End: -->
 
-<!-- (browse-url "http://localhost:8000/") -->

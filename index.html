@@ -30,9 +30,14 @@ body {
   }
 
 .content {
-  height: 90vmin;
+
+  height: 90vh;
+  width: 90vw;
   margin: auto;
   text-align: center;
+  justify-content: center; 
+  align-items: center; 
+  
 }
 
 .mySlides {
@@ -53,7 +58,6 @@ ul {
   height: 100%;
   padding: 20px;
   display: flex;
-  position: center
   gap: 4vw;
 }
 li {
@@ -110,13 +114,13 @@ ul::scroll-button(*) {
   position-anchor: --my-carousel;
 }
 ul::scroll-button(left) {
-  right: calc(anchor(left) - 40%);
-  bottom: calc(anchor(bottom) + 5%);
+  right: calc(anchor(left) - 35%);
+  bottom: calc(anchor(bottom) + 15px);
 }
 
 ul::scroll-button(right) {
-  left: calc(anchor(right) - 40%);
-  bottom: calc(anchor(bottom) + 5%);
+  left: calc(anchor(right) - 35%);
+  bottom: calc(anchor(bottom) + 15px);
 }
 ul {
   scroll-marker-group: after;
@@ -124,7 +128,7 @@ ul {
 ul::scroll-marker-group {
   position: absolute;
   position-anchor: --my-carousel;
-  bottom: calc(anchor(bottom) + 5%);
+  bottom: calc(anchor(bottom) + 20px);
   justify-self: anchor-center;
 
   display: flex;
@@ -152,17 +156,7 @@ li::scroll-marker:target-current {
 <body>
 
 <div class="content">
-
-
-
 <h3>We invite you to celebrate David Harris and Alexandra Lorentz's engagment and upcoming marriage.</h3>
-
-
-
-
-
-
-
 <ul>
   <li>
 <img src="img/photo-1.png" style="height:100%">

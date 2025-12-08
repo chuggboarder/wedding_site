@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="icon" type="image/png" href='img/wedding_ring_cursor.png'>
 
 <style>
 body {
@@ -16,6 +17,7 @@ body {
 			   fixed;
     background-position: top right,
 			 bottom left;
+    cursor: url('img/wedding_ring_cursor.png'), auto;
 }
 
   .background-iframe {
@@ -28,7 +30,7 @@ body {
   }
 
 .content {
-  max-width: 100vw;
+  height: 90vmin;
   margin: auto;
   text-align: center;
 }
@@ -40,7 +42,6 @@ display:none;
 
 
 
-<!-- (browse-url "https://developer.mozilla.org/en-US/play?uuid=646183aed8f43d5e77f43b623236d12d14f972ac&state=pVXdbtsgFH4V5GpS%2F2idtFslGlWadrPLSb3NDcE4psWAAKfxqt7tGbZ32ePsSXYMOInzp05zpBhzPs7%2F%2BXjNKl%2FLjGSTavTw5fERMWp147hETqi55Eh4XiPDLTJ0zifXgJqqSSPhH6GJFOENq2r88A0AaASQcRReJ%2Bke1PhdqJt3oW63UZPr4F52mTHnILJz9NpJZ3qJnfgOURFY24JbDFv3U%2FU2VVM100UbcTW1c6EIyu%2B7r1Irj0taC9kSNM2%2BcrngXjA6zS7h87MVVHZLR5XDjltR9gqrUVTn%2BdJjKsUcVDKuPLdrveAOJ2h0dWd5Hc81Mp56EYWvQJTni5eAr7iYV56gmzw3y7BjaFGEYMb9TiGckRT8LCWPO3NqCLoNKkC5FFG5FA5s%2B1Zy7FsDHiiteMDPKHueQ%2F1VgZmW2hJ0wsMTpSFr4JVZIqelKNBJEZ69%2FoQowRHIJPwgkg99aqQgyleYVUIWp3zB1Vmq0I511lI1TIxecFtK%2FYJBr2NWSxmMxyV2ipoU0xIKqQrqtW2H0W9Ct%2BsSDBGSILPGe61Oz3v3Uvj5dgHHsXybAWzkNIUykyAMG9pQJjyUKb%2B6i4jGug5itFj7sd8TUnUJuDwgLDVrXMpTb2R0VB1lXix46lQLTSyp57HCI7M8ehS6jc4kL7bs5VfjQVCNctwfSq3kpU%2FZZZBPKEM3ZH9%2B%2FZhmh23bbhL2nPr5uz%2FVNwtVrNIWK1pDTBjXLe7Z7Vhk8azRTnihoTvoDJq98bGa%2FTaOuveqPRqnjXPMqGSnUUeSYnQHg3OWJg2O1UOU1%2BYMXaDRTQS9Izmd3qGOJP13U31GkzHgyGfgz67XgWBouW96NjH%2Fl1JoTW2GHkavh5E8Nc6LsgUaliXpa78a7f0E2Z9Z9dEGRQfyTGQW%2BGMrtJ0ODO235u5PiZZ76l5t7PJcGD1DLSgaMO14xbRr%2Bkh3l6WFaBxBH3te3fGPeLjJuMcwiZ3iQxzba34LV%2BZTd2PC21e85rCUne%2FZ218%3D&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FGuides%2FOverflow%2FCarousels%2F") -->
 
 * {
   box-sizing: border-box;
@@ -49,7 +50,7 @@ display:none;
 
 ul {
   width: 100%;
-  height: 70vw;
+  height: 100%;
   padding: 20px;
   display: flex;
   gap: 4vw;
@@ -106,13 +107,13 @@ ul::scroll-button(*) {
   position-anchor: --my-carousel;
 }
 ul::scroll-button(left) {
-  right: calc(anchor(left) - 70px);
-  bottom: calc(anchor(top) + 13px);
+  right: calc(anchor(left) - 40%);
+  bottom: calc(anchor(bottom) + 1%);
 }
 
 ul::scroll-button(right) {
-  left: calc(anchor(right) - 70px);
-  bottom: calc(anchor(top) + 13px);
+  left: calc(anchor(right) - 40%);
+  bottom: calc(anchor(bottom) + 1%);
 }
 ul {
   scroll-marker-group: after;
@@ -120,7 +121,7 @@ ul {
 ul::scroll-marker-group {
   position: absolute;
   position-anchor: --my-carousel;
-  bottom: calc(anchor(top) + 13px);
+  bottom: calc(anchor(bottom) + 1%);
   justify-self: anchor-center;
 
   display: flex;
@@ -151,28 +152,19 @@ li::scroll-marker:target-current {
 
 
 
-
-  <h4><div class="w3-monospace">
-
-    <a href="" class="w3-button"><i>🏠 home</i></a>
-
- 
-  <a href="registry.html" class="w3-button">Registry</a>
-
-
-  <a href="https://adobe.ly/4gWjamE" target="_blank" class="w3-bar-item w3-button">Photos</a>
- 
-</div></h4>
-
-<br>
-
-
 <h3>We invite you to celebrate David Harris and Alexandra Lorentz's engagment and upcoming marriage.</h3>
 
 
 
 
-<br>  
+
+
+
+<ul>
+  <li>
+<img src="img/photo-1.png" style="height:100%">
+  </li>
+  <li>
     <h2>
 
 <a href="https://freevite.app/event/lorentz-harris-love" target=”_blank” class="w3-button"><i>Save the Date!</i><br><img
@@ -183,21 +175,19 @@ li::scroll-marker:target-current {
   src="img/rsvp-icon.svg"
   alt="2026-08-08" /></a>
 </h2>
-
-
-<br>
-
-
-
-<ul>
-  <li>
-<img src="img/photo-1.png" style="height:100%">
   </li>
   <li>
-    <h2>Page 2</h2>
-  </li>
-  <li>
-    <h2>Page 3</h2>
+     <h4><div class="w3-monospace">
+
+    <a href="" class="w3-button"><i>🏠 home</i></a>
+
+ 
+  <a href="registry.html" class="w3-button">Registry</a>
+
+
+  <a href="https://adobe.ly/4gWjamE" target="_blank" class="w3-bar-item w3-button">Photos</a>
+ 
+</div></h4>
   </li>
   <li>
     
@@ -211,7 +201,7 @@ li::scroll-marker:target-current {
 </div>
 
 
-<iframe class= "background-iframe" src="https://free.timeanddate.com/countdown/ia6j952p/n212/cf12/cm0/cu3/ct5/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pct/tcf1d8e7/fn3/fs130/tatWedding%20in.../tac000/tptJust%20Married%20for.../tpc000/iso2026-08-08T17:00:00/bas4/bat0/pa4" allowtransparency="true" frameborder="0" width="157" height="66"></iframe>
+<iframe class= "background-iframe" src="https://free.timeanddate.com/countdown/ia6j952p/n212/cf12/cm0/cu3/ct5/cs0/cac000/co1/cr0/ss0/cac000/cpc000/pct/tcf1d8e7/fn3/fs175/szw320/szh135/tatWedding%20in.../tac000/tptJust%20Married%20for.../tpc000/iso2026-08-08T17:00:00/bas4/bat0/pa4" allowtransparency="true" frameborder="0" width="224" height="91"></iframe>
 
 
 

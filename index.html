@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="w3.css">
-    <link rel="icon" type="image/png" href='img/wedding_ring_cursor.png'>
+    <link rel="icon" type="image/png" href='img/wedding_ring_favicon.png'>
 
 <style>
 body {
@@ -11,8 +11,8 @@ body {
 		      url('img/bottom_left_500.svg');
     background-repeat: no-repeat,
 		       no-repeat;
-    background-size: 25%,
-		     25%;
+    background-size: 35vh,
+		     35vh;
     background-attachment: fixed,
 			   fixed;
     background-position: top right,
@@ -20,6 +20,19 @@ body {
     cursor: url('img/wedding_ring_cursor.png'), auto;
     
 }
+
+
+  .background-greeting {
+    position: fixed;
+    top: 5vh;
+    left: 10px;
+    width: 50vw;
+    max-height: 30vh;
+
+  }
+
+
+
 
   .background-iframe {
     position: fixed;
@@ -31,14 +44,14 @@ body {
   }
 
 .content {
-    position: fixed;
+    position: static;
     flex: auto;
-    height: 100vh;
-   padding: 20px;
+    height: 71vh;
+   padding: 2vh;
   margin: auto;
   text-align: center;
   justify-content: center; 
-  align-items: center; 
+  align-items: bottom; 
   
 }
 
@@ -64,7 +77,7 @@ ul {
 li {
     list-style-type: none;
 
-    padding: 20px;
+
   flex: 0 0 100%;
 }
 ul {
@@ -159,8 +172,14 @@ li::scroll-marker:target-current {
 </head>
 <body>
 
-<div class="content">
-<h1>We invite you to celebrate David Harris and Alexandra Lorentz's wedding</h1>
+  <a href=""><img class="background-greeting"
+  src="img/path_greeting.svg"
+  alt="Let's Celebrate the Wedding of Alexandra Lorentz & David Harris" /></a>
+  
+
+  
+  <div class="content">
+ <div style="height: 28vh"></div>
 <ul>
   <li>
 <img src="img/photo-1.png" class="largepic">

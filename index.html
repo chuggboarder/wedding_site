@@ -17,10 +17,10 @@ body {
 			   fixed;
     background-position: top right,
 			 bottom left;
+    background-color: #ffffd700;
     cursor: url('img/wedding_ring_cursor.png'), auto;
     
 }
-
 
   .background-greeting {
     position: fixed;
@@ -38,7 +38,6 @@ body {
     position: fixed;
     bottom: 10px;
     right: 10px;
-
     border: none; /* Remove default iframe border */
     z-index: -1; /* Place behind other content */
   }
@@ -59,8 +58,6 @@ body {
 display:none;
 
 }
-
-
 
 * {
   box-sizing: border-box;
@@ -83,7 +80,6 @@ li {
 ul {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  scrollbar-color: black khaki;
   scrollbar-width: auto;
 }
 li {
@@ -95,8 +91,7 @@ ul::scroll-button(*) {
   font-size: 2rem;
   background: none;
   color: black;
-  opacity: 0.7;
-  cursor: pointer;
+opacity: 0.7;
 }
 
 ul::scroll-button(*):hover,
@@ -125,7 +120,9 @@ ul {
 
 ul::scroll-button(*) {
   position: absolute;
-  position-anchor: --my-carousel;
+position-anchor: --my-carousel;
+    cursor: url('img/wedding_ring_cursor_gold.png'), pointer;
+
 }
 ul::scroll-button(left) {
   right: calc(anchor(left) - 35%);
@@ -155,31 +152,38 @@ li::scroll-marker {
   height: 16px;
   background-color: transparent;
   border: 2px solid black;
-  border-radius: 50%;
+border-radius: 50%;
+    cursor: url('img/wedding_ring_cursor_gold.png'), pointer;
 }
+
 li::scroll-marker:target-current {
-  background-color: black;
+background-color: black;
+    cursor: url('img/wedding_ring_cursor_gold.png'), pointer;
 }
+
 .largepic {
     object-fit: scale-down;
     width: 100%;
-    max-height: 100%;
+max-height: 100%;
 }
+
+.w3-button {
+    cursor: url('img/wedding_ring_cursor_gold.png'), pointer;
+}
+
 
 
 </style>
 
 </head>
 <body>
-
-  <a href=""><img class="background-greeting"
+ 
+  <div class="content">
+    <div style="height: 28vh">
+       <a href=""><img class="background-greeting w3-button"
   src="img/path_greeting.svg"
   alt="Let's Celebrate the Wedding of Alexandra Lorentz & David Harris" /></a>
-  
-
-  
-  <div class="content">
- <div style="height: 28vh"></div>
+    </div>
 <ul>
   <li>
 <img src="img/photo-1.png" class="largepic">
@@ -205,7 +209,7 @@ li::scroll-marker:target-current {
   <a href="registry.html" class="w3-button">Registry</a>
 
 
-  <a href="https://adobe.ly/4gWjamE" target="_blank" class="w3-bar-item w3-button">Photos</a>
+  <a href="https://adobe.ly/4gWjamE" target="_blank" class="w3-button">Photos</a>
  
 </div></h4>
   </li>

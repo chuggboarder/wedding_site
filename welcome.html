@@ -3,221 +3,35 @@
   <head>
     <meta charset="UTF-8">
       <!-- <meta http-equiv="refresh" content="0; url=#start_tile"> -->
-    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="chuggboarder_simple.css">
     <link rel="icon" type="image/png" href='img/wedding_ring_favicon.png'>
-
-<style>
-body {
-    background-image: url('img/top_right.svg'),
-		      url('img/bottom_left_500.svg');
-    background-repeat: no-repeat,
-		       no-repeat;
-    background-size: 35vh,
-		     35vh;
-    background-attachment: fixed,
-			   fixed;
-    background-position: top right,
-			 bottom left;
-    background-color: #ffffd700;
-    cursor: url('img/wedding_ring_cursor.png'), auto;
-    
-}
-
-  .background-greeting {
-    position: fixed;
-    top: 10px;
-    left: 5vmin;
-    width: 50vw;
-    height: 30vh;
-    z-index: 2; 
-  }
-
-
-
-
-  .background-iframe {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    border: none; /* Remove default iframe border */
-    z-index: -1; /* Place behind other content */
-
-  }
-
-.content {
-
-  flex: auto;
-  height: 72vh;
-  text-align: center;
-  justify-content: center; 
-  align-items: center; 
-
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 20vh;
-  bottom: 0;
-  margin: auto;
-  
-}
-
-.mySlides {
-display:none;
-
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-ul {
-    flex: auto;
-    height: 100%;
-  /* padding: 4vw; */
-  display: flex;
-  gap: 4vw;
-}
-li {
-    list-style-type: none;
-    margin: none;
-
-
-  flex: 0 0 100%;
-}
-ul {
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: auto;
-  overflow-y: clip;
-}
-li {
-    scroll-snap-align: center;
-    
-}
-
-/* ul::scroll-button(*) { */
-/*   border: 0; */
-/*   font-size: 2rem; */
-/*   background: none; */
-/*   color: black; */
-/* opacity: 0.7; */
-/* } */
-
-/* ul::scroll-button(*):hover, */
-/* ul::scroll-button(*):focus { */
-/*   opacity: 1; */
-/* } */
-
-/* ul::scroll-button(*):active { */
-/*   translate: 1px 1px; */
-/* } */
-
-/* ul::scroll-button(*):disabled { */
-/*   opacity: 0.2; */
-/*   cursor: unset; */
-/* } */
-/* ul::scroll-button(left) { */
-/*   content: "◄"; */
-/* } */
-
-/* ul::scroll-button(right) { */
-/*   content: "►"; */
-/* } */
-/* ul { */
-/*   anchor-name: --my-carousel; */
-/* } */
-
-/* ul::scroll-button(*) { */
-/*   position: absolute; */
-/* position-anchor: --my-carousel; */
-/*     cursor: url('img/wedding_ring_cursor_gold.png'), pointer; */
-
-/* } */
-/* ul::scroll-button(left) { */
-/*   right: calc(anchor(left) - 35%); */
-/*   bottom: calc(anchor(bottom) + 15px); */
-/* } */
-
-/* ul::scroll-button(right) { */
-/*   left: calc(anchor(right) - 35%); */
-/*   bottom: calc(anchor(bottom) + 15px); */
-/* } */
-/* ul { */
-/*   scroll-marker-group: after; */
-/* } */
-/* ul::scroll-marker-group { */
-/*   position: absolute; */
-/*   position-anchor: --my-carousel; */
-/*   bottom: calc(anchor(bottom) + 20px); */
-/*   justify-self: anchor-center; */
-
-/*   display: flex; */
-/*   justify-content: center; */
-/*   gap: 20px; */
-/* } */
-/* li::scroll-marker { */
-/*   content: ""; */
-/*   width: 16px; */
-/*   height: 16px; */
-/*   background-color: transparent; */
-/*   border: 2px solid black; */
-/* border-radius: 50%; */
-/*     cursor: url('img/wedding_ring_cursor_gold.png'), pointer; */
-/* } */
-
-/* li::scroll-marker:target-current { */
-/* background-color: black; */
-/*     cursor: url('img/wedding_ring_cursor_gold.png'), pointer; */
-/* } */
-
-
-.largepic {
-    max-width: 100%;
-    max-height: 100%;
-        margin:0; padding:0;
-
-}
-
-
-.w3-button {
-    cursor: url('img/wedding_ring_cursor_gold.png'), pointer;
-}
-
-.thumb-button {
-height: 100px;
-
-}
-
-.vertical-content {
-    /* overflow-y: scroll; */
-      /* flex: auto; */
-width: 40%;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  background-color: rgba(255, 255, 255, 0.85); /* 50% opaque black background */
-  z-index: 3;
-}
-
-
-
-</style>
-
 </head>
 <body>
  
     <div title="🏠 home" class="background-greeting">
-       <a href="swipe.html#start_tile"><img class="largepic w3-button"
+       <a href="index.html"><img class="largepic w3-button"
   src="img/greeting4.svg"
   alt="Let's Celebrate the Wedding of Alexandra Lorentz & David Harris" /></a>
     </div>
 
+
+    <nav class="background-nav">
+      <a href="welcome.html" class="w3-button">
+	👋welcome
+       </a><br>
+      <a href="swipe.html#do_stuff" class="w3-button">
+	🏃#do_stuff
+      </a><br>
+      <a href="swipe.html#featured_pic" class="w3-button">
+	📷#featured_pic
+       </a>
+    </nav>
+
+    
     <div class="content">
 <div class="vertical-content">
   <h1>Welcome, Guest!</h1>
-  <p>We are excited to have you. This wedding plan is a Work in Process. Right now, we need your headcount and contact details.  Announcements may go up on this site, or out by email, text message, or by regular mail.  If I have your contact info, you shouldn't miss anything important.</p>
+  <p>We are excited to have you! These are the buttons and what they do. They are also in the <a href="swipe.html#do_stuff" class="w3 button">🏃#do_stuff</a> menu.</p>
 <br>
 <br>
 <br>
@@ -226,30 +40,34 @@ width: 40%;
 
   <a href="https://freevite.app/event/david-alexandra-love"
      target="_blank">
-    <img
-      class="w3-button thumb-button"
-      src="img/calendar.svg"
+
+   <img
+     class="w3-button thumb-button"
+     src="img/calendar.svg"
       alt="2026-08-08" />
   </a>
 <br>
-<p>This takes you to an event page where you can save the date to your calendar and RSVP with a headcount.</p>
+<p>The event page where you can save the date to your calendar and RSVP with a headcount.</p>
 <br>
 <br>
 <br>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSeED387h_ofkFcHA6HGUFt7q2ypm6Nuk5Vpv4b1jKcu4hiBaw/viewform?usp=dialog"
-     target="_blank">
-    <img
-      class="w3-button thumb-button"
-      src="img/rsvp-icon.svg"
-      alt="2026-08-08" />
+     target="_blank" class="w3-button thumb-button">
+   <h3>📨 Guest Details</h3>
   </a>
 <br>
-<p>This is a detail form I'm using to collect contact information</p>
+<p>A detail form to help us collect contact information. I might have already texted it to you. As the event gets closer, announcements may go up on this site, or out by email, text message, or by regular mail.  If we have your contact info, you shouldn't miss anything important. </p>
 <br>
 <br>
 <br>
-  <a href="registry.html" class="w3-button thumb-button">Registry</a>
+<a href="registry.html" class="w3-button thumb-button">
+  <h3>🎁 Registry</h3>
+</a>
+<p>For those who insist on doing a wedding gift. We are very fortunate and do not need a lot.
 
+
+
+  
 </div>
 </div>
 

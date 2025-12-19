@@ -3,190 +3,10 @@
   <head>
     <meta charset="UTF-8">
       <!-- <meta http-equiv="refresh" content="0; url=#start_tile"> -->
-    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="chuggboarder_simple.css">
     <link rel="icon" type="image/png" href='img/wedding_ring_favicon.png'>
 
-<style>
-body {
-    background-image: url('img/top_right.svg'),
-		      url('img/bottom_left_500.svg');
-    background-repeat: no-repeat,
-		       no-repeat;
-    background-size: 35vh,
-		     35vh;
-    background-attachment: fixed,
-			   fixed;
-    background-position: top right,
-			 bottom left;
-    background-color: #ffffd700;
-    cursor: url('img/wedding_ring_cursor.png'), auto;
-    
-}
 
-  .background-greeting {
-    position: fixed;
-    top: 10px;
-    left: 5vmin;
-    width: 50vw;
-    height: 30vh;
-  }
-
-
-
-
-  .background-iframe {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    border: none; /* Remove default iframe border */
-    z-index: -1; /* Place behind other content */
-
-  }
-
-.content {
-
-  flex: auto;
-  height: 72vh;
-  text-align: center;
-  justify-content: center; 
-  align-items: center; 
-
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 20vh;
-  bottom: 0;
-  margin: auto;
-  
-}
-
-.mySlides {
-display:none;
-
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-ul {
-    flex: auto;
-    height: 100%;
-  /* padding: 4vw; */
-  display: flex;
-  gap: 4vw;
-}
-li {
-    list-style-type: none;
-    margin: none;
-
-
-  flex: 0 0 100%;
-}
-ul {
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: auto;
-  overflow-y: clip;
-}
-li {
-    scroll-snap-align: center;
-    
-}
-
-/* ul::scroll-button(*) { */
-/*   border: 0; */
-/*   font-size: 2rem; */
-/*   background: none; */
-/*   color: black; */
-/* opacity: 0.7; */
-/* } */
-
-/* ul::scroll-button(*):hover, */
-/* ul::scroll-button(*):focus { */
-/*   opacity: 1; */
-/* } */
-
-/* ul::scroll-button(*):active { */
-/*   translate: 1px 1px; */
-/* } */
-
-/* ul::scroll-button(*):disabled { */
-/*   opacity: 0.2; */
-/*   cursor: unset; */
-/* } */
-/* ul::scroll-button(left) { */
-/*   content: "◄"; */
-/* } */
-
-/* ul::scroll-button(right) { */
-/*   content: "►"; */
-/* } */
-/* ul { */
-/*   anchor-name: --my-carousel; */
-/* } */
-
-/* ul::scroll-button(*) { */
-/*   position: absolute; */
-/* position-anchor: --my-carousel; */
-/*     cursor: url('img/wedding_ring_cursor_gold.png'), pointer; */
-
-/* } */
-/* ul::scroll-button(left) { */
-/*   right: calc(anchor(left) - 35%); */
-/*   bottom: calc(anchor(bottom) + 15px); */
-/* } */
-
-/* ul::scroll-button(right) { */
-/*   left: calc(anchor(right) - 35%); */
-/*   bottom: calc(anchor(bottom) + 15px); */
-/* } */
-/* ul { */
-/*   scroll-marker-group: after; */
-/* } */
-/* ul::scroll-marker-group { */
-/*   position: absolute; */
-/*   position-anchor: --my-carousel; */
-/*   bottom: calc(anchor(bottom) + 20px); */
-/*   justify-self: anchor-center; */
-
-/*   display: flex; */
-/*   justify-content: center; */
-/*   gap: 20px; */
-/* } */
-/* li::scroll-marker { */
-/*   content: ""; */
-/*   width: 16px; */
-/*   height: 16px; */
-/*   background-color: transparent; */
-/*   border: 2px solid black; */
-/* border-radius: 50%; */
-/*     cursor: url('img/wedding_ring_cursor_gold.png'), pointer; */
-/* } */
-
-/* li::scroll-marker:target-current { */
-/* background-color: black; */
-/*     cursor: url('img/wedding_ring_cursor_gold.png'), pointer; */
-/* } */
-
-
-
-.largepic {
-    max-width: 100%;
-    max-height: 100%;
-        margin:0; padding:0;
-
-}
-
-.w3-button {
-    cursor: url('img/wedding_ring_cursor_gold.png'), pointer;
-}
-
-
-
-</style>
 
 </head>
 <body>
@@ -197,17 +17,33 @@ li {
   alt="Let's Celebrate the Wedding of Alexandra Lorentz & David Harris" /></a>
     </div>
 
-    <div class="content">
       
+     <nav class="background-nav">
+      <a href="welcome.html" class="w3-button">
+	👋welcome
+       </a><br>
+      <a href="swipe.html#do_stuff" class="w3-button">
+	🏃#do_stuff
+      </a><br>
+      <a href="swipe.html#featured_pic" class="w3-button">
+	📷#featured_pic
+       </a>
+    </nav>
+     
+    <div class="content">
   
 <ul>
 
   <li id="guest_book" title="<< scroll/swipe >>">
     
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQyyq7mR3F4wH_xBVCRKdKpFU9nB3o_k_dQ23KMqRiTlq9C2DjKYwfSUIXI-geXP4RlCuAsnZouLDlL/pubhtml?gid=1452846335&amp;single=true&amp;widget=true&amp;headers=false"allowtransparency="true" frameborder="0"  width="600px" height="100%"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQyyq7mR3F4wH_xBVCRKdKpFU9nB3o_k_dQ23KMqRiTlq9C2DjKYwfSUIXI-geXP4RlCuAsnZouLDlL/pubhtml?gid=1452846335&amp;single=true&amp;widget=true&amp;headers=false"allowtransparency="true" frameborder="0"  width="600px" height="85%"></iframe>
+    
+<br>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSetv6sFxoM_fhtNX3yu7Wmgyn4ZK7LA3caSm1sawtnp-YmXkw/viewform?usp=header" target=”_blank” class="w3-button"><h2>🖋<i>Sign the Guest Book!</i></h2></a>
+    
   </li>
 
-  <li id="start_tile" title="<< scroll/swipe >>">
+  <li id="do_stuff" title="<< scroll/swipe >>">
     <h2>
 
 <a href="https://freevite.app/event/david-alexandra-love" target=”_blank” class="w3-button"><i>Save the Date!</i><br><img
@@ -224,13 +60,13 @@ li {
 
 
 
-  <li id="pic1" title="<< scroll/swipe >>">
+  <li id="pic2" title="<< scroll/swipe >>">
     <img src="img/photo_2.png" class="largepic">
   </li>
 
 
   
-  <li id="pic0" title="<< scroll/swipe >>">
+  <li id="pic1" title="<< scroll/swipe >>">
 <img src="img/photo-1.png" class="largepic">
   </li>
 

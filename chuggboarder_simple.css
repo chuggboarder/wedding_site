@@ -474,4 +474,5 @@ position: absolute;
     position: fixed;
     top: 40vh;
     left: 5vmin;
+    z-index: 3;
 }

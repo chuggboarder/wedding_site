@@ -1,9 +1,28 @@
 
-2025-12-13 -- Saturday
 
-**photo list
-- [ ] yard progress event prep
-- [ ] trips
+website todo <2026-01-19 Mon 23:17>
+
+* DONE make a dev branch
+
+* TODO fix DoStuff menu button sizes
+
+* TODO fix freevite date
+
+* TODO fix countdown date
+
+* TODO add links for jitsi and youtube vlog
+
+* TODO add to registry page
+
+* TODO pictures slides
+
+** TODO yard progress
+
+** TODO catering updates
+
+** TODO rough cut schedule
+
+** TODO air bnb suggestions
 
 
 

@@ -437,6 +437,14 @@ li {
 
 }
 
+.buttonpic {
+    display: block;
+    /* width: 7%; */
+
+}
+
+
+
 .w3-button {
     cursor: url('img/wedding_ring_cursor_gold.png'), pointer;
 }

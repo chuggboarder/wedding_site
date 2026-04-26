@@ -480,7 +480,7 @@ position: absolute;
 
 .background-nav {
     position: fixed;
-    top: 0;
+    top: -20px;
     /* top: 40vh; */
     left: 5vmin;
     z-index: 3;
